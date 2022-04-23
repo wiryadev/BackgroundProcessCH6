@@ -10,13 +10,13 @@
         android:id="@+id/tv_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="10pt"
-        android:textColor="#444444"
         android:layout_alignParentStart="true"
-        android:layout_marginEnd="9dp"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
-        android:text="Sleep time in Seconds:"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:text="Sleep time in Seconds:"
+        android:textColor="#444444"
+        android:textSize="10pt" />
 
     <EditText
         android:id="@+id/et_time"
@@ -26,20 +26,22 @@
         android:layout_toEndOf="@id/tv_time"
         android:background="@android:drawable/editbox_background"
         android:inputType="number" />
+
     <Button
         android:id="@+id/btn_run"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Run Async task"
         android:layout_below="@+id/et_time"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp" />
+        android:layout_marginTop="64dp"
+        android:text="Run AsyncTask" />
+
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="7pt"
         android:layout_below="@+id/btn_run"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="7pt" />
 
 </RelativeLayout>

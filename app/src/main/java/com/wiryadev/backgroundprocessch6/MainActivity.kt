@@ -14,10 +14,22 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnAsyncTask.setOnClickListener {
-            startActivity(
-                Intent(this, AsyncTaskActivity::class.java)
-            )
+        with(binding) {
+            btnHandler.setOnClickListener {
+                startActivity(
+                    Intent(this@MainActivity, HandlerActivity::class.java)
+                )
+            }
+            btnAsyncTask.setOnClickListener {
+                startActivity(
+                    Intent(this@MainActivity, AsyncTaskActivity::class.java)
+                )
+            }
+            btnCoroutines.setOnClickListener {
+                startActivity(
+                    Intent(this@MainActivity, CoroutinesActivity::class.java)
+                )
+            }
         }
     }
 }
