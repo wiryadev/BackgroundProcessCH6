@@ -6,8 +6,8 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.wiryadev.backgroundprocessch6.databinding.ActivityAsyncTaskBinding
 
-
 class AsyncTaskActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityAsyncTaskBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
