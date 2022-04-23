@@ -19,10 +19,10 @@ class HandlerActivity : AppCompatActivity() {
     private val runTask: Runnable = object : Runnable {
         override fun run() {
             if (i <= max) {
-                // Repeat this task again another 2 seconds
-                handler.postDelayed(this, (i * 1000).toLong())
                 binding.tvResult.text = "Slept for $i seconds"
                 i++
+                // Repeat this task again another i * 1000 seconds
+                handler.postDelayed(this, (i * 1000).toLong())
             } else {
                 handler.removeCallbacks(this)
                 binding.tvResult.text = "Finished: Slept for $max seconds"
